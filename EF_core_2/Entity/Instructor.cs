@@ -12,8 +12,10 @@ namespace EF_core_2.Entity
         public string Name { get; set; }
         public int? Bouns { get; set; }
         public int Salary { get; set; }
-        public string Address { get; set; }
+        public string? Address { get; set; }
         public DateTime HourRate { get; set; }
+        public int Dept_ID { get; set; }   
         public Department Dep_id { get; set; }
+        public ICollection<Course_inst> Course_Insts { get; set; }
     }
 }

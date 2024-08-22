@@ -15,6 +15,7 @@ namespace EF_core_2.Entity
         public int? Age { get; set; }
         public int DepartmentID { get; set; }
         public Department Departments { get; set; }
+        public ICollection<Stud_Course> Stud_Courses { get; set; }
 
     }
 }
